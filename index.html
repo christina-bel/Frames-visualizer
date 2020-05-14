@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>graphmodel</title>
+    <script src='jquery.js'></script>
+    <script src='cytoscape.min.js'></script>
+    <script src='graphmodel.js'></script>
+   <script src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-popper@1.0.4/cytoscape-popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4.0.1/umd/index.all.min.js"></script>
+    <link rel="stylesheet" href="graphmodel.css" type="text/css">
+</head>
+
+<body>
+    <div id="tb"><input id="inAdd" type="submit" value="Добавить" onclick="AddNode()"></div>
+    <div id="tb"><input id="inClear" type="submit" value="Очистить" onclick="ClearSpace()"></div>
+    <div id="tb"><input id="EdgesSlots" type="submit" value="Влияние слотов" onclick="SlotEdges()" disabled="disabled"></div>
+    <div id="tb"><input id="EdgesFrames" type="submit" value="Влияние фреймов" onclick="FrameEdges()" disabled="disabled"></div>
+    <textarea id="Data" name="Data"></textarea>
+    <div id="cy"></div>
+</body>
+</html>
